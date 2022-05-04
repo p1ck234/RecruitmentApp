@@ -14,7 +14,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <Grid Background="#1d499b">
-            <TextBlock Text="Кадастровое агенство" FontSize="24" Style="{StaticResource tbSetting}"/>
+            <TextBlock Foreground="White" Text="Кадастровое агенство" FontSize="24" Style="{StaticResource tbSetting}"/>
             <Image Source="Resources/image.png"
                    VerticalAlignment="Center" HorizontalAlignment="Left"
                    Margin="10,0,0,0">
@@ -22,7 +22,7 @@
             <TextBlock Name="tbRole" Opacity="0.7"
                        Style="{StaticResource tbSetting}"
                        HorizontalAlignment="Right" VerticalAlignment="Top"
-                       Margin="3"/>
+                       Margin="3" Foreground="White"/>
             <Button Height="30" Name="btnBack"
                     Content="Назад" VerticalAlignment="Bottom" 
                     HorizontalAlignment="Right" Margin="3" Visibility="Hidden"

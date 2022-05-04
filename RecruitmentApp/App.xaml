@@ -31,6 +31,7 @@
             <Setter Property="Foreground" Value="Wheat"/>
             <Setter Property="Width" Value="100"/>
             <Setter Property="Height" Value="30"/>
+            <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">

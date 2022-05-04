@@ -22,6 +22,38 @@ namespace RecruitmentApp
         public MainWindow()
         {
             InitializeComponent();
+            if (Manager.Admin == true)
+            {
+                tbRole.Text = "Вы вошли как менеджер";
+            }
+            else
+            {
+                tbRole.Text = "Вы вошли как директор";
+            }
+            Manager.MainFrame = MainFrame;
+            Manager.MainFrame.Navigate(new MainPage());
+        }
+
+        private void btnQuit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                btnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnBack.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
         }
     }
 }

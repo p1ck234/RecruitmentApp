@@ -24,5 +24,20 @@ namespace RecruitmentApp
         {
             InitializeComponent();
         }
+
+        private void btnEnter_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnQuit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tbLogin_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+        }
     }
 }

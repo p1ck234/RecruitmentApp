@@ -18,9 +18,9 @@ namespace RecruitmentApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AvtorizationWindow : Window
     {
-        public MainWindow()
+        public AvtorizationWindow()
         {
             InitializeComponent();
         }

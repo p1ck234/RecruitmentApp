@@ -77,8 +77,16 @@
       <DependentUpon>AvtorizationWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
     <Compile Include="ModelBD\BaseModel.cs" />
     <Compile Include="ModelBD\Employee.cs" />
     <Compile Include="ModelBD\User.cs" />
